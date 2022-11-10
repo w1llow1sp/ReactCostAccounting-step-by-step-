@@ -18,24 +18,21 @@ const Costs = (props) => {
                     year={selectedYear}
                     onChangeYear={yearChangeHandler}
                 />
-                <CostItem
-                    date={props.costs[0].date}
-                    description={props.costs[0].description}
-                    amount={props.costs[0].amount}
-                />
-                <CostItem
-                    date={props.costs[1].date}
-                    description={props.costs[1].description}
-                    amount={props.costs[1].amount}
-                />
-                <CostItem
-                    date={props.costs[2].date}
-                    description={props.costs[2].description}
-                    amount={props.costs[2].amount}
-                />
+                {props.costs.map((cost) => (
+                    <CostItem
+                        date={cost.date}
+                        description={cost.description}
+                        amount={cost.amount}
+                    />
+                ))}
             </Card>
         </div>
     );
 };
 
 export default Costs;
+
+//! Тут мы взяли массив данных из App.js (в самом файле мы его
+//! передали в качестве props) и c помощью метода map прошлись
+//! по всем элементам, обозвав их cost,и динамически отобразили,
+//! избавившичь от hard-code
