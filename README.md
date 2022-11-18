@@ -1,9 +1,4 @@
-# React приложениe Web-портфолио
 
-![VAbrC9pIVp](https://user-images.githubusercontent.com/98582981/202715127-72a26072-3fe0-46ad-ac96-7f61ac26b2cc.gif)
-
-
-**Посмотреть проект можно по ссылке :** https://w1llow1sp.github.io/WebPortfolio/
 
 ## Available Scripts
 
